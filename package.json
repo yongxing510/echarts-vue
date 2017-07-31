@@ -2,7 +2,16 @@
   "name": "echarts-vue",
   "version": "1.1.0",
   "description": "ECharts(3.x) component for Vue.js(2.x)",
-  "main": "bundle/v-echarts/index.js",
+  "keywords": [
+    "echarts-vue",
+    "vue-echarts",
+    "v-echarts",
+    "Vue",
+    "ECharts",
+    "Vue.js",
+    "chart"
+  ],
+  "main": "src/components/echarts/index.js",
   "files": [
     "src",
     "bundle/*.js",
@@ -28,15 +37,6 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
-  "keywords": [
-    "v-echarts",
-    "Vue",
-    "Vue.js",
-    "ECharts",
-    "chart",
-    "vue-echarts",
-    "echarts-vue"
-  ],
   "dependencies": {
     "axios": "^0.16.2",
     "echarts": "^3.6.2",
