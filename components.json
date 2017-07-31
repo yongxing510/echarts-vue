@@ -1,0 +1,4 @@
+{
+  "v-echarts": "./src/components/echarts/index.js",
+  "v-echarts-full": "./src/components/echarts/index-full.js"
+}
