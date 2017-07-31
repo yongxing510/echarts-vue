@@ -1,7 +1,21 @@
 {
   "name": "v-echarts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ECharts(3.x) component for Vue.js(2.x)",
+  "main": "bundle/v-echarts/index.js"
+  "files": [
+    "src",
+    "bundle/*.js",
+    "bundle/*.vue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yongxing510/v-echarts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yongxing510/v-echarts/issues"
+  },
+  "homepage": "https://github.com/yongxing510/v-echarts#readme",
   "author": "yongxing.liu",
   "license": "Apache-2.0 ",
   "scripts": {
@@ -20,15 +34,14 @@
     "Vue.js",
     "ECharts",
     "chart",
-    "vue-echarts"
+    "vue-echarts",
+    "echarts-vue"
   ],
   "dependencies": {
     "axios": "^0.16.2",
     "echarts": "^3.6.2",
-    "element-ui": "^1.3.2",
     "lodash.debounce": "^4.0.8",
     "vue": "^2.4.2",
-    "vue-awesome": "^2.3.1",
     "vue-router": "^2.7.0",
     "vuex": "^2.3.1"
   },
