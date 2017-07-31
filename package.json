@@ -1,8 +1,8 @@
 {
   "name": "v-echarts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ECharts(3.x) component for Vue.js(2.x)",
-  "main": "bundle/v-echarts/index.js"
+  "main": "bundle/v-echarts/index.js",
   "files": [
     "src",
     "bundle/*.js",
