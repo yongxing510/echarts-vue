@@ -357,7 +357,7 @@ ECharts-Vue support the following events:
 * `brush`
 * `brushselected`
 
-For further details, see [ECharts' API documentation]([\[https://ecomfe.github.io/echarts-doc/public/en/api.html#events\]][4]).
+For further details, see [\[ECharts' API documentation\]][4].
 
 
 
@@ -380,4 +380,4 @@ npm run dist
   [1]: https://github.com/yongxing510/echarts-vue/blob/master/bundle/v-echarts-full.js
   [2]: https://github.com/vuejs/vue/blob/dev/dist/vue.min.js
   [3]: https://github.com/yongxing510/echarts-vue/blob/master/bundle/v-echarts-full.js
-  [4]: https://ecomfe.github.io/echarts-doc/public/en/api.html#events
+  [4]: https://ecomfe.github.io/echarts-doc/public/en/api.html
