@@ -32,13 +32,13 @@ bower install echarts-vue
 ## Usage
 **1. Manual**
 
-Download ([vue.min.js][2]) and ([v-echarts-full.js][1]) and include it in your HTML file (eg. index.html). eg.
+Download ([vue.min.js][2]) and ([v-echarts-full.js][3]) and include it in your HTML file (eg. index.html). eg.
 ```
 <!DOCTYPE html>
 <html>
 <head>
-	<title>vue-test</title>
-	<script src="./vue.min.js"></script>
+	<title>echarts-vue</title>
+	<script type="text/javascript" src="./vue.min.js"></script>
 	<script type="text/javascript" src="./v-echarts-full.js"></script>
 </head>
 <body>
@@ -48,14 +48,14 @@ Download ([vue.min.js][2]) and ([v-echarts-full.js][1]) and include it in your H
   </div>
 
   <script>
-  	ECharts.default.install(Vue)
+    ECharts.default.install(Vue)
     var app = new Vue({
       el: '#app',
       data: {
         message: 'Hello Vue!',
         option: {
             title: {
-                text: 'ECharts entry example'
+                text: 'ECharts-vue entry example'
             },
             tooltip: {},
             legend: {
@@ -125,7 +125,7 @@ export default {
     return {
       option: {
             title: {
-                text: 'ECharts entry example'
+                text: 'ECharts-vue entry example'
             },
             tooltip: {},
             legend: {
@@ -191,7 +191,7 @@ export default {
     return {
       option: {
             title: {
-                text: 'ECharts entry example'
+                text: 'ECharts-vue entry example'
             },
             tooltip: {},
             legend: {
@@ -323,7 +323,7 @@ echartsVueComponent.setOption(option, notMerge, lazyUpdate)
 
 ### Events
 
-Vue-ECharts support the following events:
+ECharts-Vue support the following events:
 
 * Mouse events
   * `click`
@@ -357,7 +357,7 @@ Vue-ECharts support the following events:
 * `brush`
 * `brushselected`
 
-For further details, see [ECharts' API documentation]([https://ecomfe.github.io/echarts-doc/public/en/api.html#events][3]).
+For further details, see [ECharts' API documentation]([\[https://ecomfe.github.io/echarts-doc/public/en/api.html#events\]][4]).
 
 
 
@@ -379,4 +379,5 @@ npm run dist
 
   [1]: https://github.com/yongxing510/echarts-vue/blob/master/bundle/v-echarts-full.js
   [2]: https://github.com/vuejs/vue/blob/dev/dist/vue.min.js
-  [3]: https://ecomfe.github.io/echarts-doc/public/en/api.html#events
+  [3]: https://github.com/yongxing510/echarts-vue/blob/master/bundle/v-echarts-full.js
+  [4]: https://ecomfe.github.io/echarts-doc/public/en/api.html#events
