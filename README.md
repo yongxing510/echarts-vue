@@ -4,8 +4,8 @@
 
 ## Features
 1. Simple, lightweight, efficient, scalable;
-2. Support for importing ECharts.js components on demand;
-3. Support for binding events on-demand;
+2. Provide a feature to import Echarts.js components on demand;
+3. Provide a feature to bind events on-demand;
 4. Provide an optimized resize event for updating view;
 5. Provide an extension method (invoke) to deal with the future api of echarts.
 
@@ -32,7 +32,7 @@ bower install echarts-vue
 ## Usage
 **1. Manual**
 
-Download ([vue.min.js][2]) and ([v-echarts-full.js][3]) and include it in your HTML file (eg. index.html). eg.
+Download ([vue.min.js][2]) and ([v-echarts-full.js][3]), then include them in your HTML file (eg. index.html). eg.
 ```
 <!DOCTYPE html>
 <html>
@@ -229,7 +229,7 @@ export default {
 
 * `events` [Optional]
 
-Event-handling functions are mainly added through on in ECharts. Binding events on demand. The property of events will look like:
+Event-handling functions are mainly added through on in ECharts. Binding events on demand. The events object will look like:
 ```
 {
   "click": handler_function(){},
