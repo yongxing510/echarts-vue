@@ -83,40 +83,10 @@
       }
     },
     methods: {
-      // echarts global methods
-      // @return {string|Array.<module:echarts~ECharts>} groupId
-      connect (group) {
-        return echarts.connect(group)
-      },
-      // @return {string} groupId
-      disconnect (group) {
-        echarts.disConnect(group)
-      },
-      // merge echarts global method and instance method into one
-      dispose (target) {
-        if (target) {
-          echarts.dispose(target)
-        } else {
-          this.invoke('dispose')
-        }
-      },
-      registerMap (...args) {
-        echarts.registerMap(...args)
-      },
-      getMap () {
-        return echarts.getMap()
-      },
-      registerTheme (...args) {
-        echarts.registerTheme(...args)
-      },
-      clipPointsByRect (...args) {
-        return echarts.graphic.clipPointsByRect(...args)
-      },
-      clipRectByRect (...args) {
-        return echarts.graphic.clipRectByRect(...args)
-      },
-
       // echarts instance methods
+      dispose () {
+        this.invoke('dispose')
+      },
       getGroup: function () {
         return this.chartInstance.group
       },
@@ -251,6 +221,35 @@
       }
       delete listenerContainer[this.chartInstance.id]
       this.dispose()
+    },
+    // echarts global methods
+    // @return {string|Array.<module:echarts~ECharts>} groupId
+    connect (group) {
+      return echarts.connect(group)
+    },
+    // @return {string} groupId
+    disconnect (group) {
+      echarts.disConnect(group)
+    },
+    dispose (target) {
+      if (target) {
+        echarts.dispose(target)
+      }
+    },
+    registerMap (...args) {
+      echarts.registerMap(...args)
+    },
+    getMap () {
+      return echarts.getMap()
+    },
+    registerTheme (...args) {
+      echarts.registerTheme(...args)
+    },
+    clipPointsByRect (...args) {
+      return echarts.graphic.clipPointsByRect(...args)
+    },
+    clipRectByRect (...args) {
+      return echarts.graphic.clipRectByRect(...args)
     }
   }
 </script>
