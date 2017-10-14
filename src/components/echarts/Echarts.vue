@@ -62,13 +62,14 @@
         chart: null,
         echartsClassName: 'echart-container',
         boxHeight: null,
-        boxWidth: null
+        boxWidth: null,
+        chartInstance: null
       }
     },
     watch: {
       option: {
         handler (option) {
-          if (isObject(this.chartInstance) && isObject(option)) {
+          if (!isObject(this.chartInstance) && isObject(option)) {
             this._init()
           } else {
             this.setOption(option, this.notMerge, this.lazyUpdate)
@@ -153,7 +154,11 @@
         return this.chartInstance[name](...args)
       },
       _init () {
+        if (!this.option || !this.option.series) {
+          return
+        }
         if (isObject(this.chartInstance)) {
+          this.setOption(this.option, this.notMerge, this.lazyUpdate)
           return
         }
 
