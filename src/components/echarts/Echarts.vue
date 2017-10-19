@@ -70,7 +70,7 @@
       option: {
         handler (option) {
           if (!isObject(this.chartInstance) && isObject(option)) {
-            this._init()
+            this._doInit()
           } else {
             this.setOption(option, this.notMerge, this.lazyUpdate)
           }
@@ -153,7 +153,7 @@
         }
         return this.chartInstance[name](...args)
       },
-      _init () {
+      _doInit () {
         if (!this.option || !this.option.series) {
           return
         }
@@ -217,7 +217,7 @@
     },
     mounted () {
       if (this.option) {
-        this._init()
+        this._doInit()
       }
     },
     beforeDestroy () {
