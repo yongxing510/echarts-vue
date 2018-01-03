@@ -22,7 +22,7 @@
     Object.values(listenerContainer).forEach((echartsComponent) => {
       echartsComponent._doResize()
     })
-  }, 120, {leading: true})
+  }, 120)
   window.addEventListener('resize', resizeListener, false)
   document.addEventListener('DOMContentLoaded', resizeListener, false)
   const unloadListener = () => {
@@ -260,8 +260,8 @@
 </script>
 <style>
   .echart-container {
-    min-height: 160px;
-    min-width: 200px;
+    min-height: 80px;
+    min-width: 60px;
     width: 100%;
     height: 100%;
   }
